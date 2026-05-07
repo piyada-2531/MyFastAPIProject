@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, Request, Form
 from fastapi.responses import HTMLResponse, RedirectResponse
 from sqlalchemy.orm import Session
 import models
+import os
 from database import SessionLocal, engine
 from fastapi.templating import Jinja2Templates
 
@@ -10,6 +11,8 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+# ต้องระบุ directory ให้ชัดเจนเผื่อกรณีรันบน Cloudflare
+base_dir = os.path.dirname(os.path.abspath(__file__))
 # ตั้งค่า Templates
 templates = Jinja2Templates(directory="templates")
 
@@ -111,3 +114,6 @@ def contact_page(request: Request):
         name="contact.html", 
         context={}
     )
+
+from mangum import Mangum
+handler = Mangum(app) # นี่คือหัวใจสำคัญที่ทำให้รันบน Cloudflare ได้
