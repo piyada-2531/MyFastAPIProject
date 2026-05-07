@@ -1,7 +1,7 @@
 name = "my-fastapi-project"
 main = "main.py"
 compatibility_date = "2024-05-08"
+compatibility_flags = [ "python_workers" ] # เพิ่มบรรทัดนี้ครับ
 
-# เพิ่มส่วนนี้เพื่อให้ระบบรู้ว่ามีไฟล์ templates
-[site]
-bucket = "./templates"
+[vars]
+# หากมีตัวแปรอื่นๆ
