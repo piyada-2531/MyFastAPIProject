@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="margin-top: 120px; padding-bottom: 80px;">
+    <div class="text-center mb-5">
+        <h1 class="display-6 fw-bold" style="color: #1a237e;">ลิงก์ที่มีประโยชน์</h1>
+        <hr class="mx-auto" style="width: 50px; border-top: 4px solid #2962ff; opacity: 1;">
+    </div>
+
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 text-center">
+        
+        <div class="col">
+            <a href="https://www.dbd.go.th" target="_blank" class="text-decoration-none">
+                <div class="p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://www.dbd.go.th/images/logo.png" alt="DBD" class="img-fluid mb-3" style="max-height: 80px; filter: grayscale(100%);">
+                    <p class="small fw-bold text-dark mb-0">DBD</p>
+                    <span class="text-muted" style="font-size: 0.75rem;">กรมพัฒนาธุรกิจการค้า</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="https://www.rd.go.th" target="_blank" class="text-decoration-none">
+                <div class="p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://www.rd.go.th/publish/fileadmin/images/logo_rd.png" alt="Revenue Department" class="img-fluid mb-3" style="max-height: 80px; filter: grayscale(100%);">
+                    <p class="small fw-bold text-dark mb-0">Revenue Department</p>
+                    <span class="text-muted" style="font-size: 0.75rem;">กรมสรรพากร</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="https://www.sso.go.th" target="_blank" class="text-decoration-none">
+                <div class="p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://www.sso.go.th/wpr/assets/images/logo-sso.png" alt="SSO" class="img-fluid mb-3" style="max-height: 80px; filter: grayscale(100%);">
+                    <p class="small fw-bold text-dark mb-0">SSO</p>
+                    <span class="text-muted" style="font-size: 0.75rem;">สำนักงานประกันสังคม</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="https://www.set.or.th" target="_blank" class="text-decoration-none">
+                <div class="p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://www.set.or.th/static/images/logo-set.png" alt="SET" class="img-fluid mb-3" style="max-height: 80px; filter: grayscale(100%);">
+                    <p class="small fw-bold text-dark mb-0">SET</p>
+                    <span class="text-muted" style="font-size: 0.75rem;">ตลาดหลักทรัพย์แห่งประเทศไทย</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="https://www.sec.or.th" target="_blank" class="text-decoration-none">
+                <div class="p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://www.sec.or.th/Style%20Library/SEC/images/logo-sec.png" alt="SEC" class="img-fluid mb-3" style="max-height: 80px; filter: grayscale(100%);">
+                    <p class="small fw-bold text-dark mb-0">SEC</p>
+                    <span class="text-muted" style="font-size: 0.75rem;">ก.ล.ต.</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    /* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ ให้โลโก้มีสีและขยายเล็กน้อย */
+    .col a:hover img {
+        filter: grayscale(0%) !important;
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    .col p { transition: 0.3s; }
+    .col a:hover p { color: #2962ff !important; }
+</style>
+{% endblock %}

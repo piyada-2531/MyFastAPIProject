@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK SKY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* ทำพื้นหลังสีน้ำเงินอมม่วงตามรูป */
+        .hero-section {
+            background-color: #5f72a5; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .navbar-custom {
+            background-color: white;
+            padding: 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#" style="color: #1a237e;">AK SKY</a>
+        <div class="ms-auto d-flex align-items-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+                <li class="nav-item"><a class="nav-link small" href="/">หน้าแรก</a></li>
+                <li class="nav-item"><a class="nav-link small" href="/about">เกี่ยวกับเรา</a></li>
+                <li class="nav-item"><a class="nav-link small" href="/services">บริการของเรา</a></li>
+                <li class="nav-item"><a class="nav-link small" href="/links">ลิงก์ที่มีประโยชน์</a></li>
+                <li class="nav-item"><a class="nav-link small" href="/careers">ร่วมงานกับเรา</a></li>
+                <li class="nav-item"><a class="nav-link small" href="/contact">ติดต่อเรา</a></li>
+            </ul>
+
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-dark btn-sm">TH</button>
+                <button type="button" class="btn btn-outline-dark btn-sm">EN</button>
+            </div>
+        </div>
+    </div>
+</nav>
+    {% block content %}{% endblock %}
+</body>
+<footer style="background-color: #1a237e; color: white; padding: 20px 0; margin-top: 50px;">
+    <div class="container text-center">
+        <p class="mb-0 small">© 2024 AK SKY (AL SKY Co., Ltd.) All Rights Reserved.</p>
+    </div>
+</footer>
+</html>
