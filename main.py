@@ -44,3 +44,5 @@ async def on_fetch(request, env):
     else:
         return Response.new("<h1>404 ไม่พบหน้านี้</h1>", status=404, 
                             headers={"content-type": "text/html; charset=utf-8"})
+    
+    
