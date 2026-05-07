@@ -3,8 +3,6 @@ main = "main.py"
 compatibility_date = "2024-05-08"
 compatibility_flags = [ "python_workers" ]
 
-# เพิ่มส่วนนี้เพื่อให้ระบบติดตั้ง Library อัตโนมัติ
+# ลองระบุ Path แบบเจาะจง
 [python_bootstrap]
-requirements_path = "requirements.txt"
-[observability]
-enabled = true
+requirements_path = "./requirements.txt"
