@@ -6,3 +6,5 @@ compatibility_flags = [ "python_workers" ]
 # เพิ่มส่วนนี้เพื่อให้ระบบติดตั้ง Library อัตโนมัติ
 [python_bootstrap]
 requirements_path = "requirements.txt"
+[observability]
+enabled = true
