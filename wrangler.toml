@@ -3,7 +3,9 @@ main = "main.py"
 compatibility_date = "2024-05-08"
 compatibility_flags = ["python_workers"]
 
-# Cloudflare จะมองหาไฟล์นี้เพื่อติดตั้ง Library อัตโนมัติ
-# ต้องแน่ใจว่าไม่มีฟิลด์อื่นปนในส่วนนี้
-[python_bootstrap]
+# ใช้โครงสร้างนี้เพื่อให้ระบบดึง requirements.txt มาใช้งานได้ถูกต้อง
+[python]
 requirements_path = "requirements.txt"
+# เพิ่มต่อจากบรรทัด compatibility_flags
+# เพื่อระบุเวอร์ชันที่แน่นอน
+python_version = "3.12"
