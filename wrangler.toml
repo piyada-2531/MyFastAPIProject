@@ -1,8 +1,9 @@
 name = "my-fastapi-project"
 main = "main.py"
 compatibility_date = "2024-05-08"
-compatibility_flags = [ "python_workers" ]
+compatibility_flags = ["python_workers"]
 
-# ลองระบุ Path แบบเจาะจง
+# Cloudflare จะมองหาไฟล์นี้เพื่อติดตั้ง Library อัตโนมัติ
+# ต้องแน่ใจว่าไม่มีฟิลด์อื่นปนในส่วนนี้
 [python_bootstrap]
-requirements_path = "./requirements.txt"
+requirements_path = "requirements.txt"
