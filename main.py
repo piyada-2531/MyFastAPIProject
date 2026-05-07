@@ -3,7 +3,7 @@ from js import Response
 async def on_fetch(request, env):
     # ดึงข้อมูล URL ที่เรียกเข้ามา
     url = request.url
-    path = url.split(".workers.dev")[-1] # ดึง Path ต่อท้าย
+    path = "/" + url.split("/", 3)[-1].split("?")[0] # ดึง Path ต่อท้าย
     
     # 1. หน้าแรก (Home)
     if path == "/" or path == "":
