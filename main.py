@@ -116,4 +116,4 @@ def contact_page(request: Request):
     )
 
 from mangum import Mangum
-handler = Mangum(app) # นี่คือหัวใจสำคัญที่ทำให้รันบน Cloudflare ได้
+on_fetch = Mangum(app) # นี่คือหัวใจสำคัญที่ทำให้รันบน Cloudflare ได้
