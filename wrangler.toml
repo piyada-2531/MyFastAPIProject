@@ -1,4 +1,4 @@
 name = "my-fastapi-project"
-main = "main.py"
+main = "main.py"  # ต้องมีบรรทัดนี้เพื่อชี้ไปที่ไฟล์หลัก
 compatibility_date = "2024-05-08"
 compatibility_flags = ["python_workers"]

@@ -1,3 +1,5 @@
+# ห้ามเอาโฟลเดอร์ Virtual Environment ขึ้น (เพราะเราไปสร้างใหม่บน AWS แล้ว)
 venv/
 *.db
 __pycache__/
+.env
